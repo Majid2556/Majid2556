@@ -1,0 +1,10 @@
+#This method checks whether two strings are anagrams or not.
+#An anagram is a word or term obtained by rearranging the letters of another word or term,
+#and usually the letters of the original word are used exactly once:
+
+
+from collections import Counter
+
+def anagram(first, second):
+    return Counter(first) == Counter(second)
+anagram("abcd3", "3acdb") # True
