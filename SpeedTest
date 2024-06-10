@@ -1,0 +1,10 @@
+#The purpose of creating this program is to check the speed of sending and receiving the Internet with Python.
+#In this program, the "speedtest" module is used to test the internet speed.
+#To install this package, you need to use "pip install speedtest-cli" command.
+
+import speedtest
+speed = speedtest.Speedtest()
+download_speed = speed.download()
+upload_speed = speed.upload()
+print(f'The download speed is {download_speed}')
+print(f'The uplaod speed is {upload_speed}')
